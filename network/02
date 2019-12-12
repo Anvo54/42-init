@@ -1,0 +1,4 @@
+A: ifconfig en0 | grep -o "broadcast.*" | sed s/"broadcast "//g
+
+B: ping -c 2 10.11.255.255 | cut -d " " -f 4 | sed s/://g
+

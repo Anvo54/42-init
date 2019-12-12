@@ -1,0 +1,36 @@
+Step 1.
+
+	first you need to get the websites ip address. you can use nslookup command to do that. Exammple
+
+		nslookup slash16.org
+
+Printing will be something as below:
+
+Server:		10.51.1.253
+Address:	10.51.1.253#53
+
+Non-authoritative answer:
+Name:	slash16.org
+Address: 13.33.242.162
+Name:	slash16.org
+Address: 13.33.242.74
+Name:	slash16.org
+Address: 13.33.242.215
+Name:	slash16.org
+Address: 13.33.242.31
+
+Step 2.
+
+	You need to check information about the server by using whois command. Example:
+
+	whois 13.33.242.162 | grep "Organization" | head -n 1 | sed s/"Organization   "//g
+
+whois command gives alot  of info about the servise. In that info there is section called Organization.
+
+1. We will use grep to show only the lines that include the word "Organization".
+2. After that we will use the command: head with flag -n 1 to get only the first line.
+3. We use command sed to replace string: "Organization   " with nothing.
+
+The print will be
+
+Amazon Technologies Inc. (AT-88-Z)

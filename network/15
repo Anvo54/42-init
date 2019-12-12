@@ -1,0 +1,9 @@
+edit your hosts file (etc/hosts) using sudo privilidges.
+
+command is:
+
+sudo /etc/hosts
+
+then type following at the final line:
+
+	46.19.122.85 intra.42.fr
