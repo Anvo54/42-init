@@ -1,0 +1,8 @@
+You can find the information about your installed operating system at following file.
+/etc/os-release
+
+you can use cat to view files content. 
+
+Example:
+
+	cat /etc/os-release
