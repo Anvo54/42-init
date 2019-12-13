@@ -1,0 +1,12 @@
+first yoou need to do a new user with command adduser
+
+to create user you need to have sudo privileges. Example
+sudo udduser guest
+then you need to type in the password for the new user two times.
+
+
+
+then to findout your ip address type: 
+ip a | grep "dynamic" | cut -d ' ' -f6
+
+now, to connect to your
