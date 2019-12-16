@@ -1,0 +1,5 @@
+#!/bin/sh
+username=$1
+
+sudo pkill -KILL -u $username
+sudo userdel -r $username

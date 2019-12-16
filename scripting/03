@@ -1,0 +1,11 @@
+#!/bin/bash
+username=ssh_user
+password=sshpass
+address=`ip a | grep 'dynamic' | cut -d ' ' -f6 | sed s+/16++g`
+sudo apt-get update
+sudo apt install openssh-server -y
+sudo adduser $username
+sudo service ssh start
+echo -e '\nTo connect you new ssh server, use following command:'
+echo ssh $username@$address
+echo Then type in your just created password

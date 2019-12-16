@@ -23,7 +23,7 @@
 	Address is the outgoing address ex. 192.168.10.90.
 	If you want you can grep the result to show only the ip. Here is an example
 
-	ip a | grep "dynamic" | cut -d ' ' -f6
+	ip a | grep "dynamic" | cut -d ' ' -f6 | sed s+/16++g
 
 5. Connect to your server.
 	To connect to your just created ssh server from another machine, 
