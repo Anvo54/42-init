@@ -1,10 +1,10 @@
 1. Install openssh-server
-	-First step is to make sure thet you have your packages up to date with
-	following command: 	sudo apt-get update
-	-Second step is to install the server with following command:
+	-First step is to make sure thet you have your packages up to date.
+	To update, use following command: 	sudo apt-get update
+	-Second step is to install the ssh server with following command:
 	sudo apt install openssh-server
 	
-2. Create a new user for the server
+2. Create a new user for the server (optional if you use your own credentials)
 	We need to create a user for our server so we can log in.
 	You can make user with adduser command.
 	You need to have sudo privileges to do that. so type in the command:
@@ -17,7 +17,6 @@
 	You can start your ssh server by typing:
 	sudo service ssh start
 
-
 4. Get your ip address.
 	To copnnect your ssh server you need to know the address to connect.
 	You can check your ip address with command: ip a. 
@@ -25,7 +24,6 @@
 	If you want you can grep the result to show only the ip. Here is an example
 
 	ip a | grep "dynamic" | cut -d ' ' -f6
-
 
 5. Connect to your server.
 	To connect to your just created ssh server from another machine, 
