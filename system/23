@@ -1,3 +1,9 @@
+GRAPHICAL
+
+1. Enter  your username and password when logging in.
+
+SSH
+
 1. Install openssh-server
 	-First step is to make sure thet you have your packages up to date.
 	To update, use following command: 	sudo apt-get update

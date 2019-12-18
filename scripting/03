@@ -1,6 +1,5 @@
 #!/bin/bash
 username=ssh_user
-password=sshpass
 address=`ip a | grep 'dynamic' | cut -d ' ' -f6 | sed s+/16++g`
 sudo apt-get update
 sudo apt install openssh-server -y
