@@ -1,1 +1,1 @@
-You have to edit /etc/hosts file. Replace the current system name (in this case Debian) to name you want.
+You have to edit /etc/hostname and /etc/hosts file. Replace the current system name (in this case Debian) to name you want.
